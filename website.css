@@ -1,0 +1,551 @@
+
+/* FONTS --------------------------------------- */
+@font-face {
+    font-family: header;
+    src: url(Fonts/Fredoka_Fonts/FredokaOne-Regular.otf);
+}
+@font-face {
+  font-family: body;
+  src: url(Fonts/Rubik/Rubik-Regular.ttf);
+}
+/* BODY-------------------------------------------- */
+body {
+    margin: 0px;
+}
+/* NAVIGATION BAR---------------------------------------------------------------------- */
+.container {
+        display:inline-block;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        z-index: 99;
+        }
+#logo {
+    transform: translate(50px, 10px)
+}
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  transform: translate(230px, -60px);
+  width: 50%;
+  list-style: none;
+  margin: 0px;
+}
+#navbar, li {
+    margin-top: 10px;
+}
+.about-menu {
+    position: absolute;
+    display: none;
+    height: 50px;
+    top: 50px;
+    transform: translate(-10px, 0px);
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+    padding-top: 0px;
+    background-color: #f4b342;
+    border-radius: 10px;
+    z-index: -2;
+}
+#about:hover .about-menu {
+
+    display: block;
+    justify-content: space-around;
+}
+#navbar li {
+    height:40px;
+    width:160px;
+}
+/* BUTTON --------------------------------*/
+.button {
+    white-space: nowrap;
+    display: inline-block;
+    height: 40px;
+    width: 80px;
+    line-height: 40px;
+    padding: 0 40px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    background: #b9d43a;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+    font-family: "header";
+}
+
+.button:hover {
+  color: #dbe99b;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+}
+.button:active {
+  color: #555;
+  background-color: #f6f9ff;
+  transform: translateY(1px);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+}
+/* Social Media Buttons --------------------------------------------------------------------*/
+.socialmedia {
+    display: flex;
+    width:240px;
+    transform: translate(90%, 0px);
+}
+
+/* Icons */
+.socialmedia a {
+  color:#fff;
+  background: #b9d43a;
+  border-radius:4px;
+  text-align:center;
+  text-decoration:none;
+  font-family:fontawesome;
+  font-size: 15pt;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+  position: relative;
+  display: inline-block;
+  width:80px;
+  height:28px;
+  padding-top:12px;
+  margin:0 2px;
+  -o-transition:all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+   -webkit-font-smoothing: antialiased;
+}
+
+.socialmedia a:hover {
+  background: #c8dd64;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+}
+
+/* pop-up text */
+
+.socialmedia a span {
+  color:#666;
+  position:absolute;
+  font-family:sans-serif;
+  bottom:0;
+  left:-25px;
+  right:-25px;
+  padding:5px 7px;
+  z-index:-1;
+  font-size:14px;
+  border-radius:2px;
+  background:#fff;
+  visibility:hidden;
+  opacity:0;
+  -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 1;
+}
+
+/* pop-up text arrow */
+
+.socialmedia a span:before {
+  content:'';
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  position:absolute;
+  bottom:-5px;
+  left:60px;
+}
+
+/* text pops up when icon is in hover state */
+
+.socialmedia a:hover span {
+  bottom:50px;
+  visibility:visible;
+  opacity:1;
+}
+
+/* font awesome icons */
+.socialmedia a:nth-of-type(1):before {
+content:'\f09a';
+}
+.socialmedia a:nth-of-type(2):before {
+content:'\f099';
+}
+.socialmedia a:nth-of-type(3):before {
+content:'\f0d5';
+}
+/* Content ---------------------------------------------------------------------------------*/
+.content-container {
+  display:inline-block;
+  height: 100%;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  bottom: 0;
+  z-index: 99;
+}
+/* Header----------------------------------------------------------------*/
+.header {
+  transform: translate(10px, 0px);
+  font-family: header;
+  font-size: 40pt;
+  color: #ffffff;
+  margin-top: 5px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+/* Body-------------------------------------------------------------------*/
+.body {
+  transform: translate(10px, 0px);
+  width: 98%;
+  font-family: body;
+  font-size: 16pt;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-left: 15px;
+}
+/* MenuPageContent---------------------------------------------------------------*/
+/* Reset */
+@import url(//codepen.io/chrisdothtml/pen/ojLzJK.css);
+.tiles {
+  display:flex;
+  justify-content: space-around;
+  height: 200px;
+  width: 98%;
+  font-size: 0;
+  text-align: center;
+  margin: 30px auto;
+}
+.tiles .tile {
+  display: flex;
+  width: 900px;
+  height: 200px;
+  margin: 10px;
+  align-items: center;
+  text-align: left;
+  opacity: .99;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+}
+.tiles .tile:before {
+  content: '';
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  -webkit-transition-property: top, opacity;
+  transition-property: top, opacity;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.tiles .tile img {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 100%;
+  min-width: 100%;
+  min-width: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.tiles .tile .details {
+  font-size: 16px;
+  padding: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+.tiles .tile .details span {
+  display: block;
+  opacity: 0;
+  position: relative;
+  top: 100px;
+  -webkit-transition-property: top, opacity;
+  transition-property: top, opacity;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.tiles .tile .details .title {
+  line-height: 1;
+  font-family: header;
+  font-weight: 600;
+  font-size: 18px;
+}
+.tiles .tile .details .info {
+  font-family: body;
+  font-size: 12px;
+  line-height: 1.2;
+  margin-top: 5px;
+}
+.tiles .tile:focus:before,
+.tiles .tile:focus span, .tiles .tile:hover:before,
+.tiles .tile:hover span {
+  opacity: 1;
+}
+.tiles .tile:focus:before, .tiles .tile:hover:before {
+  top: 50%;
+}
+.tiles .tile:focus span, .tiles .tile:hover span {
+  top: 0;
+}
+.tiles .tile:focus .title, .tiles .tile:hover .title {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+.tiles .tile:focus .info, .tiles .tile:hover .info {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+/* HomePageContent---------------------------------------------------------------*/
+/* Featured ------------------------------------------ */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+.accordion {
+  display:block;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  width: 95%;
+  max-width: 1480px;
+  height: 250px;
+  overflow: hidden;
+  margin: 40px auto;
+}
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 16.666%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 500ms ease;
+}
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.accordion ul li div a {
+  display: block;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
+}
+.accordion ul li div a .accordion, .accordion ul li div a h2, .accordion ul li div a p {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.accordion ul li div a h2 {
+  font-family: header;
+  text-overflow: clip;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  top: 160px;
+}
+.accordion ul li div a p {
+  top: 160px;
+  font-size: 13.5px;
+}
+.accordion ul li:nth-child(1) {
+  background-image: url("http://www.bubbleteaology.com/wp-content/uploads/2014/12/Bubble-Tea-Recipe-3.jpg");
+}
+.accordion ul li:nth-child(2) {
+  background-image: url("https://static1.squarespace.com/static/5728bc1ae707ebe0b425b7c8/t/5742044fe707eb889470ed30/1463944273869/george_sbubbletea1.jpg?format=1500w");
+}
+.accordion ul li:nth-child(3) {
+  background-image: url("http://media.columbian.com/img/photos/2013/09/23/0917_LIF_bubble_tea1.jpg");
+}
+.accordion ul li:nth-child(4) {
+  background-image: url("http://1.bp.blogspot.com/-y33LO4VzNLk/U3r7iAMv-JI/AAAAAAAAPkc/G_9cSTCjR78/s1600/IMG_3220.JPG");
+}
+.accordion ul li:nth-child(5) {
+  background-image: url("http://fitmomjourney.com/wp-content/uploads/2016/06/bigstock-Bubble-boba-tea-95812877-1-834x1024.jpg");
+}
+.accordion ul li:nth-child(6) {
+  background-image: url("http://wellandfull.com/wp-content/uploads/2016/06/wellandfull-37.jpg");
+}
+.accordion ul:hover li {
+  width: 8%;
+}
+.accordion ul:hover li:hover {
+  width: 60%;
+}
+.accordion ul:hover li:hover a {
+  background: rgba(0, 0, 0, 0.4);
+}
+.accordion ul:hover li:hover a * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+
+  .accordion {
+    height: auto;
+  }
+  .accordion ul li, .accordion ul li:hover, .accordion ul:hover li, .accordion ul:hover li:hover {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+.about {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #666;
+}
+.about a {
+  color: blue;
+  text-decoration: none;
+}
+.about a:hover {
+  text-decoration: underline;
+}
+/* Homepage Video----------------------*/
+.homepage-video-container {
+    position: relative;
+    width: 80%;
+    height: 40%;
+    padding-bottom: 30%;
+    margin: 40px auto;
+}
+.homepage-video {
+    display:block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* ContactPageContent-------------------------------------*/
+.contact-container {
+
+}
+/* Footer--------------------------------*/
+.footer {
+  display:block;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  z-index: 99;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.footer-content {
+  margin:20px auto;
+}
+.footer-content-menu {
+  position: absolute;
+  transform: translate(50px, 0px);
+  font-family: header;
+  color: #ffffff;
+  display:flex;
+  width: 900px;
+  list-style: none;
+  justify-content: space-between;
+}
+/* NormalView------------------------------------------------------------------------------ */
+.orange1 {
+  background-color: #f4b342;
+  width: 98%;
+  height: 230px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.orange2 {
+  background-color: #f4b342;
+  width:98%;
+  height: 30%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.orange3{
+  background-color: #f4b342;
+  width:98%;
+  height: 100px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+}
+/* 764px View------------------------------------------------------------------------------ */
+@media (max-width: 768px) {
+    .orange1 {
+        background-color: #f4b342;
+        width: 100%;
+        height: 210px
+        }
+        .orange2 {
+          background-color: #f4b342;
+          width:98%;
+          height: 100%;
+          margin-left: 15px;
+          margin-right; 15px;
+        }
+    }
+/* 500px View-------------------------------------------------------------------------------- */
+@media (max-width: 500px) {
+    .orange1 {
+        background-color: #f4b342;
+        width: 100%;
+        height: 20px
+        }
+        .orange2 {
+          background-color: #f4b342;
+          width:98%;
+          height: 100%;
+          margin-left: 15px;
+          margin-right; 15px;
+        }
+    }
